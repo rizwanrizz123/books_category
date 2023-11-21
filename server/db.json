@@ -1,0 +1,29 @@
+{
+  "books": [
+    {
+      "bookName": "harry potter",
+      "authorName": "jk rowlin",
+      "amount": "12.66",
+      "imageUrl": "https://cdn2.penguin.com.au/covers/original/9781785151552.jpg",
+      "category": "Best Sellers",
+      "id": 1
+    },
+    {
+      "bookName": "Expandables",
+      "authorName": "scvg",
+      "amount": "15.00",
+      "imageUrl": "https://cdn2.penguin.com.au/covers/original/9781785151552.jpg",
+      "category": "Fiction Books",
+      "id": 2
+    },
+    {
+      "bookName": "dcsdbn",
+      "authorName": "sfsvs",
+      "amount": "10.00",
+      "imageUrl": "https://cdn2.penguin.com.au/covers/original/9781785151552.jpg",
+      "category": "Award Winners",
+      "id": 3
+    }
+  ],
+  "category": []
+}

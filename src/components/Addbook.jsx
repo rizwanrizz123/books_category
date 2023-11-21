@@ -46,6 +46,14 @@ function Addbook({show , handleClose , category, setBooks, books}) {
               />
             </Form.Group>
 
+            <Form.Group
+              className="mb-3"
+              controlId="exampleForm.ControlTextarea1"
+            >
+              <Form.Label>Book Description</Form.Label>
+              <Form.Control as="textarea" rows={3} name='description' placeholder='Enter Book Description' onChange={(e)=>setBookDetails({...bookDetails,[e.target.name]:e.target.value})} />
+            </Form.Group>
+
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Author Name</Form.Label>
               <Form.Control  onChange={(e)=>setBookDetails({...bookDetails,[e.target.name]:e.target.value})}
@@ -74,6 +82,26 @@ function Addbook({show , handleClose , category, setBooks, books}) {
                 <option value="Award Winners">Award Winners</option>
                 <option value="Anime Comics">Anime Comics</option>
                 </select>
+            </Form.Group>
+
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>Language</Form.Label>
+              <Form.Control  onChange={(e)=>setBookDetails({...bookDetails,[e.target.name]:e.target.value})}
+                type="text"
+                name='language'
+                placeholder="Enter language"
+                autoFocus
+              />
+            </Form.Group> 
+
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>Pages</Form.Label>
+              <Form.Control  onChange={(e)=>setBookDetails({...bookDetails,[e.target.name]:e.target.value})}
+                type="number"
+                name='pages'
+                placeholder="Enter number of pages"
+                autoFocus
+              />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
